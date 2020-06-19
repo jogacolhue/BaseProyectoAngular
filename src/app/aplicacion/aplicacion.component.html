@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+            <div class="sidebar-sticky pt-3">
+                <ul ngbNav class="nav flex-column">
+                    <li ngbDropdown class="nav-item">
+                        <a href (click)="false" class="nav-link" ngbDropdownToggle>Prueba</a>
+                        <div ngbDropdownMenu>
+                            <button ngbDropdownItem [routerLink]="'prueba/hola'" routerLinkActive="active">Hola</button>
+                            <div class="dropdown-divider"></div>
+                            <button ngbDropdownItem [routerLink]="'prueba/adios'"
+                                routerLinkActive="active">Adios</button>
+                        </div>
+                    </li>
+                </ul>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </nav>
+
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+            <router-outlet> </router-outlet>
+
+        </main>
+    </div>
+</div>
